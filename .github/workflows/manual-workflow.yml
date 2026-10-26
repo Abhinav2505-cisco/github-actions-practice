@@ -1,0 +1,16 @@
+
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "I started this workflow manually!"
+
+      - name: Show date
+        run: date
